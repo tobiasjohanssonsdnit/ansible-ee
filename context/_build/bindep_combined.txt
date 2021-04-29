@@ -1,0 +1,3 @@
+gcc  # from collection user
+python38-devel  # from collection user
+openldap-devel  # from collection user

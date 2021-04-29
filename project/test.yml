@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  roles:
+    - testrole
+
+  tasks:
+    - debug:
+        msg: "Hostname: {{ ansible_facts }}"
