@@ -1,4 +1,6 @@
 ---
 collections:
-  - juniper.device
-  - awx.awx
+  - name: juniper.device
+    version: 1.0.0
+  - name: awx.awx
+    version: 19.0.0
