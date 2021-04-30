@@ -1,7 +1,0 @@
-pytz  # from collection awx.awx
-python-dateutil>=2.7.0  # from collection awx.awx
-awxkit  # from collection awx.awx
-junos-eznc>=2.5.4  # from collection user
-jsnapy>=1.3.4  # from collection user
-jxmlease  # from collection user
-xmltodict  # from collection user

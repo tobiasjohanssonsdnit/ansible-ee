@@ -25,3 +25,4 @@ COPY --from=builder /output/ /output/
 RUN /output/install-from-bindep && rm -rf /output/wheels
 RUN echo This is a post-install command!
 RUN ls -la /etc
+RUN pip install pip --upgrade

@@ -8,6 +8,7 @@ dependencies:
 
 additional_build_steps:
   prepend: |
+    RUN pip install pip --upgrade
     RUN whoami
     RUN cat /etc/os-release
   append:
