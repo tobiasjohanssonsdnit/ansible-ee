@@ -16,6 +16,7 @@ ADD _build/bindep_combined.txt /tmp/src/bindep.txt
 RUN assemble
 
 FROM $ANSIBLE_RUNNER_IMAGE
+RUN pip install pip --upgrade
 RUN whoami
 RUN cat /etc/os-release
 
@@ -25,4 +26,3 @@ COPY --from=builder /output/ /output/
 RUN /output/install-from-bindep && rm -rf /output/wheels
 RUN echo This is a post-install command!
 RUN ls -la /etc
-RUN pip install pip --upgrade
