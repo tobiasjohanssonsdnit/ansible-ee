@@ -4,3 +4,5 @@ collections:
     version: 1.0.0
   - name: awx.awx
     version: 19.1.0
+  - name: cisco.dnac
+    version: 2.0.7
