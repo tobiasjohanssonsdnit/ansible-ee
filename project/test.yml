@@ -4,5 +4,14 @@
     - testrole
 
   tasks:
-    - debug:
-        msg: "Hostname: {{ ansible_facts }}"
+    - name: Check the hostname
+      debug:
+        msg: "Hostname: {{ ansible_facts.hostname }}"
+
+    - name: Check the installed collections
+      shell: ansible-galaxy collection list
+      register: collections
+
+    - name: Print the installed collections
+      debug:
+        msg: "{{ collections.stdout_lines|list }}"

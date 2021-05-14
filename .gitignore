@@ -1,3 +1,4 @@
 artifacts
 context/_build
 poetry.lock
+.vscode
